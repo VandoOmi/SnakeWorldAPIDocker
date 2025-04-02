@@ -1,0 +1,3 @@
+###
+GET http://snakeworld.up.railway.app/highscore/easy/all
+Accept: application/json
