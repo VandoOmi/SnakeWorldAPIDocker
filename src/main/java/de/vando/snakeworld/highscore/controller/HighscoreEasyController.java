@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("/highscore/easy")
+@RequestMapping("/highscore/leicht")
 public class HighscoreEasyController {
 
     @Autowired
