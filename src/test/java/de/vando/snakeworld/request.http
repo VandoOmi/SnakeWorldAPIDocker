@@ -1,9 +1,8 @@
 ###
-POST http://snakeworld.up.railway.app/highscore/mittel/add
+POST http://snakeworld.up.railway.app/highscore/leicht/add
 Content-Type: application/json
 
 {
-  "id": 1,
   "score": 1,
   "name": "Fabian"
 }

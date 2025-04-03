@@ -15,12 +15,12 @@ public class HighscoreHardController {
     @Autowired
     private HighscoreHardService service;
 
-    @PostMapping("/add")
+    @PostMapping
     public ResponseEntity<HighscoreHard> addHighscore(@RequestBody HighscoreHard highscore) {
         return ResponseEntity.ok(service.add(highscore));
     }
 
-    @GetMapping("/{id}")
+    @GetMapping("/get/{id}")
     public ResponseEntity<HighscoreHard> getHighscore(@PathVariable int id) {
         return ResponseEntity.ok(service.read(id));
     }
@@ -35,7 +35,7 @@ public class HighscoreHardController {
         return ResponseEntity.ok(service.readAverage());
     }
 
-    @GetMapping("/all")
+    @GetMapping
     public ResponseEntity<List<HighscoreHard>> getAllHighscore() {
         return ResponseEntity.ok(service.readAll());
     }

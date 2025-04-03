@@ -15,12 +15,12 @@ public class HighscoreEasyController {
     @Autowired
     private HighscoreEasyService service;
 
-    @PostMapping("/add")
+    @PostMapping
     public ResponseEntity<HighscoreEasy> addHighscore(@RequestBody HighscoreEasy highscore) {
         return ResponseEntity.ok(service.add(highscore));
     }
 
-    @GetMapping("/{id}")
+    @GetMapping("/get/{id}")
     public ResponseEntity<HighscoreEasy> getHighscore(@PathVariable int id) {
         return ResponseEntity.ok(service.read(id));
     }
@@ -35,7 +35,7 @@ public class HighscoreEasyController {
         return ResponseEntity.ok(service.readAverage());
     }
 
-    @GetMapping("/all")
+    @GetMapping
     public ResponseEntity<List<HighscoreEasy>> getAllHighscore() {
         return ResponseEntity.ok(service.readAll());
     }
