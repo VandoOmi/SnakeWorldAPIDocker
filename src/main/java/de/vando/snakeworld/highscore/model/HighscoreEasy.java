@@ -11,6 +11,7 @@ import lombok.Data;
 public class HighscoreEasy {
 
     @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(nullable = false)
     private int id;
 

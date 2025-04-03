@@ -1,7 +1,9 @@
 ###
-GET http://snakeworld.up.railway.app/highscore/easy/all
-Accept: application/json
+POST http://snakeworld.up.railway.app/highscore/mittel/add
+Content-Type: application/json
 
-###
-GET http://localhost:8080/highscore/easy/all
-Accept: application/json
+{
+  "id": 1,
+  "score": 1,
+  "name": "Fabian"
+}
